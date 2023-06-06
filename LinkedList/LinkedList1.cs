@@ -59,5 +59,9 @@ namespace LinkedList
             }
             
         }
+        public void Append(int data)
+        {
+            AddLast(data);
+        }
     }
 }
