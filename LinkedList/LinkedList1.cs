@@ -35,15 +35,29 @@ namespace LinkedList
             }
             return temp;
         }
+        public void AddFirst(int data)
+        {
+            Node newNode=new Node(data);
+            newNode.Next = Head;
+            Head = newNode; 
+            Console.WriteLine("{0} is added into LinkedList",newNode.Data);
+        }
         public void Display()
         {
-            Node current = Head;
-            while(current.Next != null)
+            if(Head == null)
             {
-                //Console.WriteLine(current.Data +"  ");
-                current = current.Next;
+                Console.WriteLine("No node are present");
             }
-            Console.WriteLine();
+            else
+            {
+                Node temp=Head;
+                while(temp!=null)
+                {
+                    Console.Write(temp.Data+ " ");
+                    temp = temp.Next;
+                }
+            }
+            
         }
     }
 }

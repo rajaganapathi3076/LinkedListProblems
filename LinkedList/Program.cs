@@ -12,9 +12,10 @@ namespace LinkedList
         {
             Console.WriteLine("Welcome to LinkedList Problem UC1\n");
             LinkedList1 LinkedList=new LinkedList1();
-            LinkedList.AddLast(56);
-            LinkedList.AddLast(30);
-            LinkedList.AddLast(70);
+            LinkedList.AddFirst(70);
+            LinkedList.AddFirst(30);
+            LinkedList.AddFirst(56);
+            
            
 
 
