@@ -76,27 +76,9 @@ namespace LinkedList
                 Console.WriteLine("\n{0} means 1st node is deleted from LinkedList", deletedNode);
             }
         }
-        public void RemoveLast()
-        {
-            if (Head == null)
-            {
-                Console.WriteLine("\nLinkedList is empty");
-            }
-            else if(Head.Next != null)
-                Head=Head.Next;
-            else
-            {
-                Node temp = Head;
-                while(temp.Next.Next != null)
-                {
-                    temp=temp.Next;
-                }
-                Console.WriteLine("{0} is removed from last", temp.Next.Data);
-                temp.Next = null;
+        
 
-            }
-
-        }
+        
 
        
     }
