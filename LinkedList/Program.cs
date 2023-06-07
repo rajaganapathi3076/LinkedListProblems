@@ -10,13 +10,15 @@ namespace LinkedList
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to LinkedList Problem UC1\n");
+            Console.WriteLine("Welcome to LinkedList Problem UC6\n");
             LinkedList1 LinkedList=new LinkedList1();
-            LinkedList.Append(30);
             LinkedList.Append(56);
+            LinkedList.Append(30);
             LinkedList.Append(70);
             LinkedList.Display();
-            LinkedList.RemoveFirst();
+           
+
+            LinkedList.RemoveLast();
             LinkedList.Display();
 
 
