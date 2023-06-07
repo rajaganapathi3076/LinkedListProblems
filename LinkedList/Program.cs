@@ -12,24 +12,27 @@ namespace LinkedList
         {
             Console.WriteLine("Welcome to LinkedList Problem UC1\n");
             LinkedList1 LinkedList=new LinkedList1();
-            LinkedList.Append(56);
             LinkedList.Append(30);
+            LinkedList.Append(56);
             LinkedList.Append(70);
-            LinkedList.Append(52);
-
-
-
-
-
-
+            LinkedList.Display();
+            LinkedList.RemoveLast();
             LinkedList.Display();
 
 
 
 
-            
-          
-              
+
+
+
+
+
+
+
+
+
+
+
 
         }
     }
