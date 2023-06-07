@@ -97,8 +97,39 @@ namespace LinkedList
             }
 
 
+        }
+        public void InsertAfter(int value, int newData)
+        {
+            Node newNode = new Node(newData);
+            Node current = Head;
+
+            while (current != null)
+            {
+                if (current.Data == value)
+                {
+                    newNode.Next = current.Next;
+                    current.Next = newNode;
+                    return;
+                }
+                current = current.Next;
+            }
+            Console.WriteLine(value + " not found in the list.");
+        }
 
 
 
-    }   }
+
+
+
+
+
+
+
+
+
+
+
+
+    }   
+
 }

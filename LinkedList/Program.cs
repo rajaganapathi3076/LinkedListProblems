@@ -16,9 +16,7 @@ namespace LinkedList
             LinkedList.Append(30);
             LinkedList.Append(70);
             LinkedList.Display();
-           
-
-            LinkedList.RemoveLast();
+            LinkedList.InsertAfter(56, 76);
             LinkedList.Display();
 
 
